@@ -25,7 +25,7 @@ First, navigate to the `htdocs` folder in your XAMPP installation, then clone th
 
 ```bash
 cd C:/xampp/htdocs
-git clone https://github.com/your-username/mackeno_assignment.git crm
+git clone https://github.com/dimafili2412/mackeno_assignment
 ```
 
 This will clone the repository into a folder called crm inside the htdocs directory.
