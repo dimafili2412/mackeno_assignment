@@ -9,7 +9,6 @@ This is a simple CRM (Customer Relationship Management) app with a PHP backend (
 -   [Database Setup](#database-setup)
 -   [Environment Variables](#environment-variables)
 -   [Running the Application](#running-the-application)
--   [Alias Configuration for Apache](#alias-configuration-for-apache)
 
 ## Requirements
 
@@ -92,7 +91,7 @@ JWT_SECRET=123
 ## Frontend (Client) .env
 
 In the /client directory, create a file named .env with the following content:
-REACT_APP_API_URL=http://localhost/crm/api
+REACT_APP_API_URL=http://localhost/mackeno_assignment/api
 
 ### Running the Application
 
@@ -103,7 +102,7 @@ REACT_APP_API_URL=http://localhost/crm/api
 
 ## Step 2: Running the PHP Backend
 
-Make sure Apache is running in XAMPP. The backend API will be accessible at http://localhost/crm/api once you set up the Apache alias (see below).
+Make sure Apache is running in XAMPP. The backend API will be accessible at http://localhost/mackeno_assignment/api once you set up the Apache alias (see below).
 
 ## Step 3: Running the React Frontend
 
@@ -116,28 +115,7 @@ npm start
 
 This will start the React development server at http://localhost:3000.
 
-### Alias Configuration for Apache
-
-To serve the app from http://localhost/crm, you need to set up an Apache alias.
-
-## Step 1: Configure the Alias
-
-Open the httpd.conf or httpd.conf file in your XAMPP installation (typically located in C:/xampp/apache/conf/httpd.conf).
-Add the following configuration:
-
-Alias /crm "C:/xampp/htdocs/crm"
-
-<Directory "C:/xampp/htdocs/crm">
-Options Indexes FollowSymLinks
-AllowOverride All
-Require all granted
-</Directory>
-
-## Step 2: Restart Apache
-
-After saving the configuration, restart Apache via the XAMPP Control Panel.
-
-## Step 3: Access the Application
+## Step 4: Access the Application
 
 The API will be accessible at http://localhost/crm/api.
 The React frontend will be available at http://localhost:3000.
